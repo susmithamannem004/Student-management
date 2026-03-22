@@ -1,1 +1,0 @@
-﻿{"$schema":"https://railway.app/railway.schema.json","build":{"builder":"DOCKERFILE","dockerfilePath":"backend/Dockerfile"},"deploy":{"startCommand":"java -jar /app/target/student-management-0.0.1-SNAPSHOT.jar","restartPolicyType":"ON_FAILURE"}}
