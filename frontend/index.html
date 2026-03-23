@@ -1,49 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>StudentHub — Login</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-<div class="login-page">
-  <div class="login-card">
-    <div class="login-logo">
-      <div class="login-logo-icon">S</div>
-      <div class="login-logo-text">StudentHub</div>
-    </div>
-    <div class="login-title">Welcome back</div>
-    <div class="login-sub">Sign in to your management dashboard</div>
-    <div class="login-hint">
-      🔑 Demo credentials:<br>
-      <strong>Admin:</strong> admin / admin123<br>
-      <strong>Staff:</strong> staff / staff123
-    </div>
-    <div id="login-error" class="login-error">Invalid username or password</div>
-    <div class="login-form">
-      <div class="login-field">
-        <label>Username</label>
-        <input type="text" id="l-user" placeholder="Enter username"/>
-      </div>
-      <div class="login-field">
-        <label>Password</label>
-        <div class="pass-wrap">
-          <input type="password" id="l-pass" placeholder="Enter password"/>
-          <button class="eye-btn" type="button" onclick="togglePass()" title="Show/hide">
-            <svg id="eye-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
-          </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentHub — Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../frontend/style.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-card">
+        <div class="login-logo">
+          <div class="login-logo-icon">S</div>
+          <div class="login-logo-text">StudentHub</div>
+        </div>
+        <div class="login-title">Welcome back</div>
+        <div class="login-sub">Sign in to your management dashboard</div>
+        <div class="login-hint">
+          🔑 Demo credentials:<br />
+          <strong>Admin:</strong> admin / admin123<br />
+          <strong>Staff:</strong> staff / staff123
+        </div>
+        <div id="login-error" class="login-error">
+          Invalid username or password
+        </div>
+        <div class="login-form">
+          <div class="login-field">
+            <label>Username</label>
+            <input type="text" id="l-user" placeholder="Enter username" />
+          </div>
+          <div class="login-field">
+            <label>Password</label>
+            <div class="pass-wrap">
+              <input type="password" id="l-pass" placeholder="Enter password" />
+              <button
+                class="eye-btn"
+                type="button"
+                onclick="togglePass()"
+                title="Show/hide"
+              >
+                <svg
+                  id="eye-icon"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="login-btn" onclick="doLogin()">Sign in →</button>
         </div>
       </div>
-      <button class="login-btn" onclick="doLogin()">Sign in →</button>
     </div>
-  </div>
-</div>
-<script src="js/auth.js"></script>
-</body>
+    <script src="../frontend/auth.js"></script>
+  </body>
 </html>
